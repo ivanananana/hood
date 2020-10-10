@@ -23,17 +23,7 @@ blocks:
       jobs:
         - name: Build Project
           commands:
-            - ./gradlew
-        - name: 'Job #2'
-          commands: []
-          matrix:
-            - env_var: FOO
-              values:
-                - value1
-                - value2
-        - name: 'Job #3'
-          commands: []
-          parallelism: 4
+            - \
       epilogue:
         on_pass:
           commands:
